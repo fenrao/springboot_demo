@@ -1,0 +1,3 @@
+# springboot_demo
+使用Itext库文件，生成pdf预览
+使用时修改pdf文件目录和字体目录即可使用，pdf模板可使用Acrobat DC编辑
