@@ -1,5 +1,6 @@
 package com.example.demo.controller
 
+import com.example.demo.dao.UsersMapper
 import com.example.demo.enity.User
 import com.example.demo.mapper.Usermapper
 import io.swagger.annotations.Api
@@ -19,6 +20,10 @@ class SwaggerController {
 
     @Autowired
     var userMapper: Usermapper? = null
+
+    //mybatis 自动生成的代码
+    @Autowired
+    var usersMapper: UsersMapper? = null
 
     @ApiOperation(value = "无参数值", notes = "提示")
     @GetMapping(value = ["/swagger"])
