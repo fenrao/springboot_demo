@@ -93,5 +93,14 @@ class SwaggerController {
 
     }
 
+    @ApiOperation(value = "人民币数字转换",notes = "数字转中午")
+    @ApiImplicitParam(name = "rmb",value = "￥",required = true, dataType = "String",paramType = "path")
+    @GetMapping(value = "/rmb/{money}")
+    fun toRMB(@PathVariable(value="money")money:String):String?{
+
+        return ""
+    }
+
+
 
 }
